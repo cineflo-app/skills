@@ -1,0 +1,14 @@
+{
+  "name": "cineflo",
+  "owner": {
+    "name": "Neon Media LLC",
+    "email": "hello@cineflo.com"
+  },
+  "plugins": [
+    {
+      "name": "cineflo",
+      "source": "./",
+      "description": "Plan a film production with Claude and CineFlo: shot lists, script breakdown, schedule, call sheets and budget."
+    }
+  ]
+}

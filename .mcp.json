@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cineflo": {
+      "type": "http",
+      "url": "https://mcp.cineflo.com/mcp"
+    }
+  }
+}
