@@ -1,12 +1,20 @@
 ---
 name: start-project
-description: Start a new film project in CineFlo from a conversation. Use when the user wants to create a CineFlo project, set up a new production, or get a screenplay, treatment or pitch into CineFlo.
+description: "Create a new project in CineFlo and get the screenplay into it. Use this whenever the user wants to start or set up a new film, short, commercial or music video, create a CineFlo project, or get a screenplay, treatment or outline into CineFlo, including when they share a script or treatment in the chat and want to start planning it."
 ---
 
 # Start a project
 
 Create the project, get the screenplay in, and point the user at the next
 steps.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Create it
 
@@ -21,7 +29,8 @@ Screenplays are imported in CineFlo, not uploaded here. Give the user the
 importer link that `create_project` returns (or `start_script_import` for an
 existing project) and tell them to choose the PDF, Final Draft (.fdx) or
 Fountain file there. CineFlo builds the scenes, page counts and script pages
-from it. Don't claim anything was uploaded.
+from it. Say plainly that the import is theirs to do; otherwise they'll look
+for scenes that aren't there yet.
 
 If the user shared a treatment or outline in the chat instead of a
 screenplay, offer to create the scenes from it with `save_scenes` (numbers,

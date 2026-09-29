@@ -1,12 +1,20 @@
 ---
 name: shoot-day-tracking
-description: Track a shoot day in CineFlo as it happens. Use when the user reports shots done, retakes or skips on set ("we got 4A", "4C needs another take"), asks what's left today or whether the day will make it, or needs to move unfinished work to another day.
+description: "Track a shoot day live in CineFlo. Use this whenever the user reports from set ('we got 4A', '4C needs another take', 'we're dropping 12B'), asks what's left today, whether the day will make it, how far behind they are, or wants to push unfinished scenes to another day. Records reported results straight away."
 ---
 
 # Track the shoot day
 
 Keep the shot list and the stripboard in step with what actually happens on
 set, and tell the user where the day stands.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Load the day
 
@@ -43,6 +51,15 @@ When asked, or after a batch of updates, give:
   shots with least story value, or whole scenes that can move without a
   company move.
 
+For example:
+
+```
+2:40 PM · 11 of 19 shots done
+Sc 12 done · Sc 14: 3 left (14C, 14D, 14E) · Sc 3: 5 left
+Remaining ≈ 3h 50m against a 6:30 PM wrap → about 30 minutes over
+Option: drop 14E (covered by 14C) and move Sc 3 to Day 5, where the diner is booked again
+```
+
 ## 4. Move unfinished work
 
 Moving work to another day changes the schedule, so propose it and wait for
@@ -57,7 +74,8 @@ Report what moved and the new page count of each affected day.
 
 ## Notes
 
-- Don't change a shot's status because it looks likely: only on the user's
-  report.
+- Change a shot's status only on the user's report, not because it looks
+  likely: the shot list is the record the script supervisor and editor rely
+  on, and a shot marked done that wasn't gets lost.
 - If the Scenes & Shots tab is view-only, say you can report but not record,
   and where edit access is set.

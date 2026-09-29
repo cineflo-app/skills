@@ -1,12 +1,20 @@
 ---
 name: lookbook
-description: Build a mood board or lookbook in a CineFlo project for the whole film, a location or a character. Use when the user wants a lookbook, mood board, visual references, a colour palette, or to capture the tone, lighting or camera style of the project.
+description: "Build a mood board or lookbook in CineFlo for the film, a location or a character. Use this whenever the user talks about the look, tone, colour palette, lighting or camera style of the film, shares visual references, or wants a lookbook, mood board or pitch visuals, even if they only describe how they want it to feel."
 ---
 
 # Build a lookbook
 
 Turn the conversation about how the film should look into a mood board whose
 sections read as lookbook chapters.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Choose the board
 
@@ -39,8 +47,9 @@ belongs to:
 - **palette** cards for colour: 1–6 swatches with hex values and labels
   ("sodium orange #F2A33A").
 - **link** cards for references the user names: a film still, a painting, a
-  photographer's page. Only add links the user gives you or asks for: don't
-  invent URLs.
+  photographer's page. Add only links the user gives you or asks you to find:
+  an invented URL breaks, or points somewhere unintended, in a lookbook the
+  whole team will open.
 
 Give every card a short `caption`, as it would read in a printed lookbook.
 Link cards to the scenes they're for with `sceneIds` (from `get_scene`).

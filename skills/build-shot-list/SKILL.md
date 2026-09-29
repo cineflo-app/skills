@@ -1,12 +1,20 @@
 ---
 name: build-shot-list
-description: Build or extend a shot list for a scene in a CineFlo project. Use when the user asks for a shot list, coverage, shots or setups for a scene, a sequence or a whole project, or wants to plan how a scene will be shot.
+description: "Plan coverage and build shot lists in CineFlo. Use this whenever the user wants shots, coverage, setups, angles or a shot list for a scene, a sequence or the whole film, asks how to shoot or cover a scene, or wants to add, rework or extend shots, even if they don't say 'shot list' or name CineFlo. Asks about coverage style and camera package first when they're unknown."
 ---
 
 # Build a shot list
 
 Plan coverage the way the director and DP would, using the project's own
 coverage style and camera package, then save the shots to CineFlo.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Find the project and the scene
 
@@ -82,6 +90,21 @@ Then:
 Show the plan as a short table (shot, size, angle or movement, lens,
 description) with one line on the approach. Save when the user agrees, or
 straight away if they asked you to create the shots.
+
+For example (the shape to aim for, not content to reuse):
+
+```
+Scene 12 · INT. DINER - NIGHT · 1 3/8 pages · classic coverage, 2 cameras (Alexa 35, Signature Primes)
+
+| Shot | Size       | Angle / move      | Lens | Covers                                          |
+|------|------------|-------------------|------|-------------------------------------------------|
+| A    | W          | Eye level, sticks | 24mm | Master: Maya enters, crosses to Dev's booth     |
+| B    | MCU (OTS)  | Dolly in slowly   | 50mm | Dev over Maya's shoulder through "You knew her?"; B cam: Maya's reverse on 75mm |
+| C    | CU         | Static            | 85mm | Maya reading the letter                         |
+| D    | Insert     | Overhead          | 100mm macro | The letter's last line                   |
+```
+
+Numbers are left out so CineFlo assigns them in the user's style.
 
 Save with one `save_shots` call (up to 100 shots). Report how many shots were
 added and their numbers, then call `get_shots` with the `sceneId` so the user

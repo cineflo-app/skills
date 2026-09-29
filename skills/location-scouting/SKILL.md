@@ -1,12 +1,20 @@
 ---
 name: location-scouting
-description: Log location scouts and manage filming locations in a CineFlo project, and link scenes to them. Use when the user describes a location or a recce, wants to record scout notes, compare options for a location, link scenes to places, or plan around a location's availability.
+description: "Log location scouts and manage filming locations in CineFlo, and link scenes to them. Use this whenever the user describes a place they visited or are considering, shares recce or tech scout notes, compares location options, asks where a scene will shoot, or wants scenes tied to places, even if they don't say 'scout' or 'location'."
 ---
 
 # Scout and manage locations
 
 Record what the scout found in a form the rest of the crew can use, and tie
 each scene to the place it will shoot.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Know the places
 

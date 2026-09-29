@@ -1,12 +1,20 @@
 ---
 name: script-breakdown
-description: Break down a screenplay in a CineFlo project into production elements. Use when the user asks to break down the script or a scene, tag props, wardrobe, cast, extras, vehicles or effects, or build the elements list a stripboard and budget need.
+description: "Break down a screenplay into production elements in CineFlo: cast, extras, props, set dressing, wardrobe, makeup, vehicles, animals, stunts, effects and the rest. Use this whenever the user asks to break down, tag or mark up the script or some scenes, asks what a scene needs, or wants the elements list a schedule, budget or call sheet will depend on, even without the word 'breakdown'."
 ---
 
 # Break down the script
 
 Tag every element a scene needs, the way a first AD or script supervisor
 marks up a script, and save it to the project's breakdown.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Check what's there
 

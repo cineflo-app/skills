@@ -1,12 +1,20 @@
 ---
 name: script-revision
-description: Bring a CineFlo project up to date after a new script draft is imported. Use when the user has a new draft, revised pages or a new revision colour, or asks what changed in the script and what it affects in the breakdown, shot lists or schedule.
+description: "Update a CineFlo project after a new script draft or revised pages. Use this whenever the user mentions a new draft, a rewrite, revised or coloured pages (blue, pink, yellow), asks what changed in the script, or wants the breakdown, shot lists or schedule brought in line with the latest draft, even if they only say 'the writer sent new pages'."
 ---
 
 # Update the project for a script revision
 
 A new draft ripples through everything built from the old one. Find what
 changed, show what it touches, and update what the user agrees to.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Get the new draft in
 
@@ -43,12 +51,23 @@ scheduled. An omitted scene keeps its number; don't reuse it.
 
 Report per scene in a compact list: what changed and what it affects. Put
 the things that cost time or money first: new cast, new locations, stunts or
-effects, and schedule moves. Then offer the updates:
+effects, and schedule moves. For example:
+
+```
+Blue revision (Oct 2): 4 changed, 1 new, 1 omitted
+- Sc 14 changed: Ruth now speaks → cast #5 needed on Day 1; add her single
+- Sc 22A new: EXT. ROOFTOP - NIGHT → new location, not scheduled
+- Sc 30 omitted: 6 shots, scheduled Day 7 → unschedule?
+- Sc 8, 11, 19 changed: dialogue only; breakdown and shots still fit
+```
+
+Then offer the updates:
 
 - Breakdown: `save_breakdown` for new elements. Remove tags that no longer
   apply with `delete_breakdown_tag` only after the user agrees.
-- Shots: propose revised shots and save with `save_shots`. Don't delete shots
-  on your own: ask, or mark them `skipped`.
+- Shots: propose revised shots and save with `save_shots`. Ask before
+  deleting a shot, or mark it `skipped`: shots can carry notes, takes and
+  reference images the user wants to keep.
 - Schedule: unschedule omitted scenes with `update_stripboard`
   (`unschedule_scene`) when the user agrees, and flag days that are now too
   long or too short.

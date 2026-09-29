@@ -1,12 +1,20 @@
 ---
 name: prep-checklist
-description: Turn a CineFlo project's breakdown and schedule into department to-do lists with owners and due dates. Use when the user asks for a prep checklist, department tasks, what each department needs to do before the shoot, or to set up the to-do board.
+description: "Turn the breakdown and schedule into department to-do lists in CineFlo, with owners and due dates. Use this whenever the user wants a prep checklist, task list, pre-production plan or department assignments, asks what each department needs before the shoot, or wants the to-do board set up or brought up to date with the schedule."
 ---
 
 # Build the prep checklist
 
 Work backwards from the shoot dates: every element in the breakdown is a job
 for some department, due before the first day it's needed.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Gather the plan
 
@@ -54,7 +62,8 @@ Show the checklist grouped by list, with due dates and suggested owners.
 When the user agrees, save with `save_todos` (up to 100 per call): `list` by
 name creates the department list if it's missing, `dueDate` as YYYY-MM-DD,
 and `assignee` by the crew member's name. Assignees who are project members
-are linked; others are kept as text. Never put an email address in a task.
+are linked; others are kept as text. Leave email addresses out of tasks (the
+connector refuses them anyway): the board is shared with every collaborator.
 
 ## Notes
 

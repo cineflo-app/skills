@@ -1,12 +1,20 @@
 ---
 name: budget-review
-description: Review, explain or update a CineFlo project's production budget and cost report. Use when the user asks what they've spent, what's over budget, what's committed, what's left, for a cost report or hot costs, or to add budget lines, purchase orders or actuals.
+description: "Read, explain and update a film's budget and cost report in CineFlo. Use this whenever the user asks what they've spent, what's over or under, what's committed, what's left, for hot costs, a cost report or a variance, or wants to add budget lines, purchase orders or actual costs, even if they only ask 'are we on budget'."
 ---
 
 # Review the budget
 
 Read the cost report like a line producer: where the money is, where it's
 going over, and what's still coming.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. Read the cost report
 
@@ -37,7 +45,15 @@ Lead with the answer to what the user asked. For a general review:
 - Open commitments that will land soon.
 - Money booked to an account but no line, which usually needs assigning.
 
-Keep it to the lines that matter; offer the full list.
+Keep it to the lines that matter; offer the full list. For example:
+
+```
+You're $1,550 over on $48,200 so far (3.2%), almost all in two lines:
+- 3300 Camera package: $5,200 actual vs $3,800 budgeted (+$1,400). The invoice notes a second body.
+- 4100 Rain towers: $2,450 vs $1,800 (+$650), deposit plus overtime.
+Committed but not yet spent: $4,400 (G&E truck PO, approved).
+$385 is booked to Props (5200) without a line; worth assigning.
+```
 
 ## 3. Change it only when asked
 

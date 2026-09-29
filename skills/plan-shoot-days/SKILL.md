@@ -1,12 +1,20 @@
 ---
 name: plan-shoot-days
-description: Schedule a CineFlo project's scenes onto shoot days on the stripboard. Use when the user asks to schedule scenes, build or rework a shooting schedule, plan shoot days, balance the days, or find what isn't scheduled yet.
+description: "Build or rework the shooting schedule on CineFlo's stripboard. Use this whenever the user wants to schedule scenes, plan or balance shoot days, find what isn't scheduled, fit the film into a number of days, group scenes by location or cast, or move scenes between days, even if they just ask 'how many days do we need' or 'what should we shoot first'."
 ---
 
 # Plan shoot days
 
 Lay unscheduled scenes onto shoot days the way a first AD builds a
 stripboard, then save the schedule in CineFlo.
+
+## Before you start
+
+Find the project with `list_projects`. If only one fits what the user said,
+use it without asking; if several could, ask which, since writing to the
+wrong production is hard to notice later. If a tool says a tab isn't shared
+or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
+Data → Connected Apps, and carry on with what you can do.
 
 ## 1. See where things stand
 
@@ -38,7 +46,16 @@ Build days that a crew can actually shoot:
 ## 3. Propose, then save
 
 Show the plan as a day-by-day list: date, location, scenes with their eighths,
-cast numbers, and the total pages. Save when the user agrees.
+cast numbers, and the total pages. Save when the user agrees. For example:
+
+```
+Day 1 · Mon Oct 12 · Rosie's Diner (INT, night)
+  Sc 12  2 1/8  cast 1, 2      Sc 14  1 4/8  cast 1, 2, 5      Sc 3  6/8  cast 1
+  Total 4 3/8 pages · one location, no company move
+Day 2 · Tue Oct 13 · Mercy Hospital (INT, day) → parking lot (EXT, dusk)
+  ...
+Unscheduled: Sc 27 (needs the rain rig; suggest Day 5 with the other exteriors)
+```
 
 - Create or edit days with `save_shoot_days` (a date holds one shoot day;
   add a `title` such as "Diner" and a `unit` if there's more than one).
