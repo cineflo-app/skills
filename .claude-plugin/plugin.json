@@ -9,6 +9,7 @@
     "url": "https://cineflo.com"
   },
   "homepage": "https://cineflo.com/connected-apps/",
+  "privacyPolicyUrl": "https://cineflo.com/privacy-policy/",
   "repository": "https://github.com/cineflo-app/skills",
   "license": "MIT",
   "keywords": [
