@@ -10,6 +10,12 @@ Plan a film production with Claude in your [CineFlo](https://cineflo.com) projec
 - **Prep a call sheet.** Claude drafts a day's call sheet from the stripboard, with call times, cast statuses and locations. It never sends it: you send from CineFlo.
 - **Review the budget.** Claude reads the cost report and explains where you are over, where money is committed and what is left.
 - **Start a project.** Claude creates a project and gives you the link to import your screenplay.
+- **Handle a script revision.** After a new draft is imported, Claude shows which scenes changed and what that touches in the breakdown, shot lists and schedule, then updates what you agree to.
+- **Track the shoot day.** Tell Claude "we got 4A" or "4C needs another take" and it records it, says whether the day will make it, and moves unfinished scenes when you agree.
+- **Build a prep checklist.** Claude turns the breakdown and schedule into department to-do lists, with owners and due dates ahead of each shoot day.
+- **Scout locations.** Claude logs recce notes in the form the crew needs (power, access, noise, sun path), compares options, and links scenes to places.
+- **Make a lookbook.** Claude builds a mood board for the film, a location or a character, with notes, colour palettes and the references you name.
+- **Set up cast and crew.** Claude numbers the cast the call-sheet way, builds the crew list by department, and orders it as call sheets print.
 
 ## Use it
 
