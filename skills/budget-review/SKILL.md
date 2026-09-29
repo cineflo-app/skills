@@ -16,6 +16,9 @@ wrong production is hard to notice later. If a tool says a tab isn't shared
 or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
 Data → Connected Apps, and carry on with what you can do.
 
+The steps below are good production practice, not rules to hold to: when
+the user asks for something different, do it their way.
+
 ## 1. Read the cost report
 
 `list_projects`, then `get_budget`. Amounts are integer cents in the budget's
