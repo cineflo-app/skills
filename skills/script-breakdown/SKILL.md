@@ -15,6 +15,8 @@ use it without asking; if several could, ask which, since writing to the
 wrong production is hard to notice later. If a tool says a tab isn't shared
 or is view-only, tell the user it's set in CineFlo under Settings → Privacy &
 Data → Connected Apps, and carry on with what you can do.
+If no CineFlo tools are available at all, CineFlo isn't connected yet:
+follow the connect-cineflo skill.
 
 The steps below are good production practice, not rules to hold to: when
 the user asks for something different, do it their way.

@@ -16,10 +16,13 @@ Plan a film production with Claude in your [CineFlo](https://cineflo.com) projec
 - **Scout locations.** Claude logs recce notes in the form the crew needs (power, access, noise, sun path), compares options, and links scenes to places.
 - **Make a lookbook.** Claude builds a mood board for the film, a location or a character, with notes, colour palettes and the references you name.
 - **Set up cast and crew.** Claude numbers the cast the call-sheet way, builds the crew list by department, and orders it as call sheets print.
+- **Get connected.** When CineFlo isn't connected yet, Claude still does the work in the chat, then explains what CineFlo is and how to connect it.
 
 ## Use it
 
-1. Add the plugin, then connect CineFlo from the plugin's **Connectors** tab and sign in with your CineFlo account. Connected Apps is part of CineFlo Pro.
+**You need a CineFlo account on Pro.** Connecting an assistant is part of CineFlo Pro, which starts with a free trial. No account yet? You can create one on the sign-in page in step 1, with Google, Apple or an email address, and start the trial from there. Without CineFlo connected, Claude still helps in the chat and tells you how to connect.
+
+1. Add the plugin, then connect CineFlo from the plugin's **Connectors** tab and sign in, or create your CineFlo account.
 2. On the CineFlo sign-in page, choose which projects and which tabs Claude can view or edit. You can change this any time in CineFlo under Settings → Privacy & Data → Connected Apps.
 3. Ask in plain words, for example "Build a shot list for scene 12 of Night Shift" or "Which scenes aren't scheduled yet?", or pick a skill from the `/` menu.
 
