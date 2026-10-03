@@ -1,7 +1,7 @@
 {
   "name": "cineflo",
   "displayName": "CineFlo",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Plan and run a film production with Claude and CineFlo: shot lists around your coverage style and camera package, script breakdown and revisions, shoot days, call sheets, shoot-day tracking, department prep, locations, lookbooks, cast and crew, and budget review. Requires CineFlo Pro, which starts with a free trial.",
   "author": {
     "name": "Neon Media LLC",

@@ -73,7 +73,7 @@ Then offer the updates:
 - Shots: propose revised shots and save with `save_shots`. Ask before
   deleting a shot, or mark it `skipped`: shots can carry notes, takes and
   reference images the user wants to keep.
-- Schedule: unschedule omitted scenes with `update_stripboard`
+- Schedule: unschedule omitted scenes with `unschedule_items`
   (`unschedule_scene`) when the user agrees, and flag days that are now too
   long or too short.
 

@@ -70,7 +70,7 @@ Option: drop 14E (covered by 14C) and move Sc 3 to Day 5, where the diner is boo
 Moving work to another day changes the schedule, so propose it and wait for
 a yes:
 
-- A whole scene: `update_stripboard` with `move_scene` and the new `date`.
+- A whole scene: `schedule_scenes` with `move_scene` and the new `date`.
 - A scene that's partly shot: keep it on today's day, and record the
   remaining shots' plan in their `notes` and on the new day as the user
   prefers.
