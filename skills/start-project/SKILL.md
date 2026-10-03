@@ -31,7 +31,7 @@ can narrow that in CineFlo under Settings → Privacy & Data → Connected Apps.
 ## 2. Get the screenplay in
 
 Screenplays are imported in CineFlo, not uploaded here. Give the user the
-importer link that `create_project` returns (or `start_script_import` for an
+importer link that `create_project` returns (or `get_script_import_link` for an
 existing project) and tell them to choose the PDF, Final Draft (.fdx) or
 Fountain file there. CineFlo builds the scenes, page counts and script pages
 from it. Say plainly that the import is theirs to do; otherwise they'll look

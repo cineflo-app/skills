@@ -29,7 +29,7 @@ the user asks for something different, do it their way.
 - `get_breakdown` for the scenes you'll work on, so you reuse existing
   elements and don't tag the same thing twice.
 - If there's no script yet, give the user the importer link from
-  `start_script_import`: the screenplay is uploaded in CineFlo, not here.
+  `get_script_import_link`: the screenplay is uploaded in CineFlo, not here.
 
 ## 2. Read the scenes
 

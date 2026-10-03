@@ -24,7 +24,7 @@ the user asks for something different, do it their way.
 ## 1. Get the new draft in
 
 If the user hasn't imported it yet, give them the link from
-`start_script_import`: the screenplay is uploaded in CineFlo, and a new import
+`get_script_import_link`: the screenplay is uploaded in CineFlo, and a new import
 is a revision that keeps tagged elements and the previous draft.
 
 ## 2. See what changed
