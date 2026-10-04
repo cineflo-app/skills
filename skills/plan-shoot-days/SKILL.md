@@ -71,10 +71,36 @@ Unscheduled: Sc 27 (needs the rain rig; suggest Day 5 with the other exteriors)
   whole day at once. `unschedule_items` takes scenes or breaks off again.
 - Up to 100 operations per call, applied in order, all or nothing.
 
+## Splitting a scene across days
+
+A long scene can shoot over more than one day, one strip per day. Suggest it
+when a scene won't fit a day, or when part of it needs a different call (a
+night exterior, a cast member's last day), and say which shots go where.
+
+- `schedule_scene` with `shotIds` (and `pages`, in eighths, when the user
+  gives them) puts those shots on the `date`, adding them to any part of the
+  scene already there. A day that held the whole scene keeps the rest of its
+  shots. Pages are typed, not worked out: ask, or leave them off and say the
+  day shows the scene's full page count.
+- To set one day's part to exactly a list of shots (and its pages), use
+  `edit_schedule_day` with `edit_strip`, the strip's `stripId`, `shotIds` and
+  `pages`.
+- Shots no day covers are the scene's remainder. `get_schedule` lists them
+  under `unscheduledScenes` with their shots and pages; schedule them with
+  another `schedule_scene` and `shotIds`, or tell the user they're left over.
+- `get_schedule` marks each part as `part` X `of` Y, with its `shotIds` and
+  `pageCountPortion`. Count a part's own pages in the day's total, not the
+  whole scene's.
+- `mode: "add"` puts the whole scene on another day too, without moving it.
+  `move_scene` and `unschedule_scene` take a `stripId` to act on one day's
+  part; without it they act on the earliest part, or (unschedule) every day.
+- A shot may sit on two days for a pickup. That is allowed; mention it.
+
 ## Notes
 
 - Moving a shoot day to another date moves its scenes' shoot dates too.
 - Scheduling a scene sets its shoot date in Scenes & Shots, which needs edit
   access there; if the tool refuses, say which tab to share.
 - Rework an existing schedule with `move_scene` and `unschedule_scene` rather
-  than rebuilding it, and say what moved.
+  than rebuilding it, and say what moved. For a scene on several days, pass
+  the `stripId` of the part you mean.

@@ -71,9 +71,11 @@ Moving work to another day changes the schedule, so propose it and wait for
 a yes:
 
 - A whole scene: `schedule_scenes` with `move_scene` and the new `date`.
-- A scene that's partly shot: keep it on today's day, and record the
-  remaining shots' plan in their `notes` and on the new day as the user
-  prefers.
+- A scene that's partly shot: `schedule_scene` with the new `date` and the
+  remaining shots as `shotIds` (and their `pages` if the user knows them).
+  Then make today's strip list only the shots already done, with
+  `edit_strip` and its `shotIds`, so today's call sheet and reports stay true
+  and the new day lists only what's left.
 
 Report what moved and the new page count of each affected day.
 
