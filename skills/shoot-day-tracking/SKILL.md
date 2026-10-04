@@ -49,9 +49,10 @@ Batch several reports into one `save_shots` call.
 When asked, or after a batch of updates, give:
 
 - Shots done and left, per scene, in shooting order.
-- The time the remaining shots need, from their `estimatedMinutes`, against
-  the scheduled wrap or the call sheet's wrap time (`get_callsheets` for the
-  date).
+- The time the remaining shots need, from their estimates, against the
+  scheduled wrap or the call sheet's wrap time (`get_callsheets` for the
+  date). `get_schedule` already gives each strip's `end` worked out from the
+  day's call, so the last strip's end is where the day is heading.
 - Whether the day will make it, and what to drop or move if not: suggest the
   shots with least story value, or whole scenes that can move without a
   company move.
