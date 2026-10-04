@@ -38,7 +38,10 @@ Ask for what you can't know, in one message, then update the sheet with
 
 - **Times**: crew call, shooting call (first shot, usually 60 to 90 minutes
   after crew call), meal (no more than 6 hours after crew call) and an
-  estimated wrap.
+  estimated wrap. A new sheet already takes these from the stripboard when
+  the day has them: crew call from the day's `call`, shooting call from the
+  first scene's start, meal from the meal break, wrap from the last strip's
+  end. Check them rather than asking again.
 - **Locations**: slot 1 basecamp, 2 parking, 3 set, with addresses, and the
   nearest hospital's address. Don't guess an address: it's where cast and
   crew will drive at 5 AM, and a wrong one costs the morning. Ask, or leave

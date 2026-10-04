@@ -64,14 +64,15 @@ Unscheduled: Sc 27 (needs the rain rig; suggest Day 5 with the other exteriors)
 
 - Create or edit days with `save_shoot_days` (a date holds one shoot day;
   add a `title` such as "Diner" and a `unit` if there's more than one). Set
-  the day's shooting `call` when the user gives it.
+  the day's general crew `call` when the user gives it.
 - Place scenes with `schedule_scenes`: `schedule_scene` for each scene with
   its `date` and `position` (0 is the top of the day), in shooting order.
   Then use `edit_schedule_day` to add meal breaks with `add_break` where the
-  user wants them; `reorder_day` reorders a whole day at once.
+  user wants them (a break is a length, `estimatedMinutes`, 30 by default; it
+  starts where the strip above ends); `reorder_day` reorders a whole day at once.
   `unschedule_items` takes scenes or breaks off again.
-- Strip times work themselves out: from the day's `call`, each strip runs as
-  long as its shots' estimates, else its pages, and `get_schedule` shows the
+- Strip times work themselves out: from the day's crew `call`, each strip
+  runs as long as its shots' estimates, else its pages, and `get_schedule` shows the
   resulting `start` and `end`. Only set a strip's `start` with `edit_strip`
   to hold it at a fixed time (a company move, an actor's arrival); that marks
   it `pinned`, and later strips follow it. Report any `conflict`: `overlap`
