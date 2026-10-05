@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "cineflo": {
-      "type": "streamable-http",
-      "url": "https://mcp.cineflo.com/mcp",
-      "headers": {}
-    }
-  }
-}
