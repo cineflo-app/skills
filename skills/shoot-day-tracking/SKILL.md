@@ -44,6 +44,12 @@ without asking again, then confirm in one line.
 
 Batch several reports into one `save_shots` call.
 
+Scenes carry a progress `status` too (planned, scheduled, in-progress,
+completed). It follows the shots on its own: a scene turns Completed when its
+last counted shot is. Set it with `save_scenes` only for a scene without
+shots, when the user reports the whole scene ("we wrapped 14"); `"auto"` hands
+a scene back to the app.
+
 ## 3. Say where the day stands
 
 When asked, or after a batch of updates, give:
