@@ -28,7 +28,7 @@ Plan a film production with Claude in your [CineFlo](https://cineflo.com) projec
 
 ## Data
 
-The skills are instructions only: this plugin contains no scripts and runs nothing on your computer. Claude reaches your projects through the CineFlo connector at `https://mcp.cineflo.com/mcp`, which is run by CineFlo (Neon Media LLC) and only reaches the projects and tabs you share with it. Contact details, pay rates and uploaded files are never shared with Claude, nothing is sent to anyone, and anything deleted can be restored in CineFlo for 30 days. See [How Connected Apps work](https://cineflo.com/connected-apps/) and the [CineFlo privacy policy](https://cineflo.com/privacy-policy/).
+The skills are instructions only: this plugin contains no scripts and runs nothing on your computer. Claude reaches your projects through the CineFlo connector at `https://mcp.cineflo.com/mcp`, which is run by CineFlo (Neon Media LLC) and only reaches the projects and tabs you share with it. Contact details, pay rates and uploaded files are never shared with Claude, nothing is sent to anyone, and Claude asks before deleting anything you didn't name, because deleting can't be undone. See [How Connected Apps work](https://cineflo.com/connected-apps/) and the [CineFlo privacy policy](https://cineflo.com/privacy-policy/).
 
 ## Support
 
