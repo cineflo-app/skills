@@ -57,7 +57,8 @@ belongs to:
   whole team will open.
 
 Give every card a short `caption`, as it would read in a printed lookbook.
-Link cards to the scenes they're for with `sceneIds` (from `get_scene`).
+Link cards to the scenes they're for with `sceneIds` (from `get_project`'s
+scene list).
 
 ## 3. Shape it
 

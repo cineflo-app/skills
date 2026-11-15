@@ -25,9 +25,11 @@ the user asks for something different, do it their way.
 
 - `list_projects`, then `get_schedule` for the stripboard: shoot days in date
   order with their strips, and the scenes that aren't scheduled yet.
-- `get_scene` for scenes you need details on (INT/EXT, location, time of day,
-  page length in eighths, cast numbers), and `get_cast_and_crew` for the cast
-  list.
+- `get_project` for the scene list: every scene with its INT/EXT, time of
+  day, page length in eighths, location, story day, cast numbers, shoot date
+  and progress, in one call. If the list doesn't carry locations or cast
+  numbers, use `get_scene` for the scenes you need. `get_cast_and_crew` gives
+  the cast list.
 - Ask for anything the schedule depends on that you can't read: the shoot
   dates or how many days, days off, cast availability, and locations with
   fixed dates.
