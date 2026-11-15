@@ -55,6 +55,15 @@ belongs to:
   photographer's page. Add only links the user gives you or asks you to find:
   an invented URL breaks, or points somewhere unintended, in a lookbook the
   whole team will open.
+- **image** cards for pictures, up to 10 per call, from one of three places:
+  `imageUrl` for an image the user points you to (a direct link to the
+  picture, not a page about it); `stockPhotoId` for a free Pexels photo, found
+  with `get_moodboards` and `stockSearch`, which the lookbook credits
+  automatically; or `projectImage` for a shot reference, scout photo, file or
+  another board's image already in the project. Show the user stock picks
+  before adding them. If an image fails, the rest still save: say which one
+  failed and why. If a tool refuses image cards, the user adds images in
+  CineFlo.
 
 Give every card a short `caption`, as it would read in a printed lookbook.
 Link cards to the scenes they're for with `sceneIds` (from `get_project`'s
@@ -63,12 +72,11 @@ scene list).
 ## 3. Shape it
 
 Order the sections the way the story is told, lead each with its strongest
-card (`order` 0), and mark the best references `favorite`. Images the user
-uploads in CineFlo can become the cover: `coverCardId` takes an image card.
+card (`order` 0), and mark the best references `favorite`. Any image card can
+become the cover: `coverCardId` takes an image card.
 
 ## Notes
 
-- Image cards can't be created here; the user adds images in CineFlo, and
-  their captions can be edited from here.
+- A card's picture can't be swapped once added; add a new card instead.
 - Keep the board specific to this film: what the camera, light and colour
   should do and why, rather than general genre notes.
