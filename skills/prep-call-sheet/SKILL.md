@@ -24,7 +24,9 @@ the user asks for something different, do it their way.
 ## 1. Start from the schedule
 
 - `list_projects`, then `get_callsheets` for the date to see whether a sheet
-  exists already.
+  exists already. If it shows `sentOn`, the sheet already went out: say so
+  before changing it, because recipients keep the version they got until it is
+  sent again from CineFlo.
 - If there's none, create it with `save_callsheet` and the `date` only: CineFlo
   fills it from that day's stripboard (scenes, times, D/N labels, breaks, the
   cast those scenes need, and "Day X of Y").

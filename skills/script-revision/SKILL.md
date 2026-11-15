@@ -33,9 +33,12 @@ is a revision that keeps tagged elements and the previous draft.
 its date, and each scene's status against the previous draft: unchanged,
 changed, new or omitted. Work only on the scenes that aren't unchanged.
 
-For each changed or new scene, read the new text with `get_scene_text` (up to
-40 scenes per call with `sceneNumbers`). You can't see the old text, so judge
-the change from the new text against the current breakdown and shots.
+For each changed or new scene, read what changed with `get_scene_text` and
+`draft: "changes"` (up to 40 scenes per call with `sceneNumbers`): the lines
+the new draft removed and added. `draft: "previous"` gives the old text in
+full. If the old draft is no longer available, or the tool doesn't take
+`draft`, read the new text and judge the change against the current breakdown
+and shots.
 
 ## 3. Work out the impact
 

@@ -73,3 +73,5 @@ report what changed.
 - If Budget is shared view-only, answer questions and say that changes need
   edit access (CineFlo, Settings → Privacy & Data → Connected Apps).
 - This records costs; it doesn't place orders or move money.
+- For cast costs, `get_schedule` with `report: "dood"` gives each cast
+  member's work and hold days, which day rates multiply against.

@@ -25,7 +25,9 @@ the user asks for something different, do it their way.
 
 `list_projects`, then `get_schedule` with `from` and `to` set to today (or
 the date the user names) for the day's scenes and strips in order. Then
-`get_shots` with each scene's `sceneId` for the shots and their status.
+`get_shots` with that `date` and `fields: "status"` for every shot on the day
+and its status in one call. If `get_shots` doesn't take a date, call it with
+each scene's `sceneId` instead.
 
 Shot references on set combine the scene and the shot: "4A" is scene 4,
 shot A. When a reference could match more than one shot, ask which.

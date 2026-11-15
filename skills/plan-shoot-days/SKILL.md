@@ -108,6 +108,11 @@ night exterior, a cast member's last day), and say which shots go where.
 
 ## Notes
 
+- Check cast days with `get_schedule` and `report: "dood"` (Day Out of Days):
+  each cast member's work and hold days, first and last day. Tightening the
+  days an actor works, and their holds, saves money.
+- Schedule edits take `dryRun: true` to preview the changed days before
+  saving; use it to show the user a proposal, then save when they agree.
 - Moving a shoot day to another date moves its scenes' shoot dates too.
 - Scheduling a scene sets its shoot date in Scenes & Shots, which needs edit
   access there; if the tool refuses, say which tab to share.
