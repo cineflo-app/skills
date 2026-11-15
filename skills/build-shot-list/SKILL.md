@@ -117,6 +117,10 @@ sees the shot list.
 
 ## Notes
 
+- To look at shot reference images, call `get_shots` with `includeImages: true`
+  (a few at a time; `imageIds` picks which). They come only when the project's
+  Images switch is on; if the result says it's off, the user can turn it on in
+  CineFlo.
 - `save_shots` can't move a shot to another scene: create it in the new scene
   and delete the old one with `delete_shot`.
 - To renumber a scene after reordering, use `renumber_shots`; custom names such

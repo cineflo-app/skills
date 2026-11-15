@@ -77,6 +77,10 @@ become the cover: `coverCardId` takes an image card.
 
 ## Notes
 
+- To see a board's pictures, call `get_moodboards` with its `boardId` and
+  `includeImages: true`, a few at a time. They come only when the project's
+  Images switch is on; if the result says it's off, the user can turn it on in
+  CineFlo.
 - A card's picture can't be swapped once added; add a new card instead.
 - Keep the board specific to this film: what the camera, light and colour
   should do and why, rather than general genre notes.

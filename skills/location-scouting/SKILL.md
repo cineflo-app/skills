@@ -64,6 +64,9 @@ different days may be worth grouping, which the plan-shoot-days skill covers.
 
 ## Notes
 
+- To look at scout photos, call `get_locations` with `includeImages: true`
+  (`imageIds` takes a scout or location id for all its photos). They come only
+  when the project's Images switch is on.
 - Photos, video, GPS and weather can't be added here; the user adds photos in
   CineFlo.
 - Addresses are the production's locations; don't add anyone's personal
